@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Muhammad Fathur Rizki</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cyberpunk Decorative Elements -->
+    <div class="grid-overlay"></div>
+    <div class="glowing-orb orb-1"></div>
+    <div class="glowing-orb orb-2"></div>
+    <div class="glowing-orb orb-3"></div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header id="navbar">
+        <div class="container nav">
+            <h1 class="logo">Sec<span>Portfolio</span></h1>
+            <nav>
+                <a href="#about" class="nav-link">Tentang</a>
+                <a href="#skill" class="nav-link">Skill</a>
+                <a href="#project" class="nav-link">Project</a>
+                <a href="#contact" class="nav-link">Kontak</a> 
+            </nav>
+            <div class="nav-glow-bar"></div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <div class="profile-wrapper">
+                <img src="pp.jpg" alt="Profile Fathur Rizki">
+                <div class="avatar-glow"></div>
+                <div class="scanner-line"></div>
+            </div>
+            <h2 class="hero-title">Halo, Saya <span class="accent-text">Fathur Rizki</span></h2>
+            <div class="typing-container">
+                <i class="fa-solid fa-terminal terminal-icon"></i>
+                <span id="typewriter"></span><span class="cursor">|</span>
+            </div>
+            <p class="hero-desc">
+                Seorang mahasiswa Informatika yang berfokus pada <strong>Web Development</strong> dan sangat tertarik dengan dunia <strong>Cybersecurity (Offensive Security)</strong>. Senang mengeksplorasi celah keamanan aplikasi web dan membangun sistem yang aman.
+            </p>
+            <div class="btn-group">
+                <a href="#project" class="btn btn-primary">
+                    <span class="btn-text">Lihat Project</span>
+                    <span class="btn-glow"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="title">Tentang Saya</h2>
+            <p class="text">
+                Saya memiliki ketertarikan mendalam pada teknologi, mulai dari bagaimana kode ditulis hingga bagaimana sistem tersebut diamankan dari ancaman siber. Melalui pendekatan yang disiplin dan konsisten—baik dalam mengasah kemampuan teknis coding maupun menjaga fokus mental—saya selalu tertantang untuk memecahkan masalah kompleks, mengeksplorasi lab keamanan di TryHackMe, dan merancang arsitektur web yang solid.
+            </p>
+        </div>
+    </section>
+
+    <!-- SKILL & TOOLS -->
+    <section class="skill" id="skill">
+        <div class="container">
+            <h2 class="title">Keahlian & Tools</h2>
+            <div class="skill-list">
+                <div class="card" data-tilt>
+                    <i class="fa-brands fa-html5 skill-icon html-css"></i>
+                    <span>HTML5 & CSS3</span>
+                </div>
+                <div class="card" data-tilt>
+                    <i class="fa-brands fa-js skill-icon js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="card" data-tilt>
+                    <i class="fa-solid fa-code skill-icon backend"></i>
+                    <span>PHP (CodeIgniter)</span>
+                </div>
+                <div class="card" data-tilt>
+                    <i class="fa-solid fa-crosshairs skill-icon pentest"></i>
+                    <span>Nmap</span>
+                </div>
+                <div class="card" data-tilt>
+                    <i class="fa-solid fa-network-wired skill-icon network"></i>
+                    <span>Network Protocols (TCP/UDP)</span>
+                </div>
+                <div class="card" data-tilt>
+                    <i class="fa-brands fa-linux skill-icon linux"></i>
+                    <span>Linux Environment</span>
+                </div>
+                <div class="card" data-tilt>
+                    <i class="fa-solid fa-server skill-icon server"></i>
+                    <span>Ngrok & Port Forwarding</span>
+                </div>
+                <div class="card" data-tilt>
+                    <i class="fa-brands fa-github skill-icon git"></i>
+                    <span>Git / GitHub</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="project" id="project">
+        <div class="container">
+            <h2 class="title">Eksperimen & Project</h2>
+            <div class="project-list">
+                
+                <div class="project-card" data-tilt>
+                    <div class="project-header">
+                        <i class="fa-solid fa-shield-halved project-icon"></i>
+                        <span class="project-tag">Security</span>
+                    </div>
+                    <h3>Network & Vulnerability Scanning</h3>
+                    <p>Melakukan simulasi pemindaian keamanan pada jaringan lokal menggunakan Nmap dan Wireshark untuk menganalisis port aktif serta potensi celah keamanan pada protokol transport layer (TCP/UDP).</p>
+                    <div class="project-link">
+                        <span>Detail Project</span>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-tilt>
+                    <div class="project-header">
+                        <i class="fa-solid fa-users project-icon"></i>
+                        <span class="project-tag">Web App</span>
+                    </div>
+                    <h3>Modernisasi Sistem Aspirasi Mahasiswa</h3>
+                    <p>Konsep dan rancangan aplikasi web portal interaktif berbasis PHP untuk pengumpulan suara dan aspirasi mahasiswa yang mengutamakan privasi data serta kontrol akses yang aman.</p>
+                    <div class="project-link">
+                        <span>Detail Project</span>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-tilt>
+                    <div class="project-header">
+                        <i class="fa-solid fa-bug project-icon"></i>
+                        <span class="project-tag">Web Security</span>
+                    </div>
+                    <h3>Web Security Lab: IDOR Analysis</h3>
+                    <p>Dokumentasi praktis mengenai analisis kerentanan Insecure Direct Object Reference (IDOR) pada aplikasi web simulasi, lengkap dengan langkah-langkah mitigasi patch pada kode backend.</p>
+                    <div class="project-link">
+                        <span>Detail Project</span>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="title">Hubungi Saya</h2>
+            <div class="contact-grid">
+                <a href="mailto:fathurrizki917@gmail.com" class="contact-card" data-tilt>
+                    <div class="contact-icon-wrapper">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">fathurrizki917@gmail.com</span>
+                </a>
+                
+                <a href="https://instagram.com/mfathurrizki_" target="_blank" class="contact-card" data-tilt>
+                    <div class="contact-icon-wrapper">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <span class="contact-label">Instagram</span>
+                    <span class="contact-value">@mfathurrizki_</span>
+                </a>
+                
+                <a href="https://github.com/fathur-rizki" target="_blank" class="contact-card" data-tilt>
+                    <div class="contact-icon-wrapper">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-value">github.com/fathurrizki04</span>
+                </a>
+                
+                <a href="https://tryhackme.com/p/fathur_sec" target="_blank" class="contact-card" data-tilt>
+                    <div class="contact-icon-wrapper">
+                        <i class="fa-solid fa-terminal"></i>
+                    </div>
+                    <span class="contact-label">TryHackMe</span>
+                    <span class="contact-value">fathurrizki917</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 M Fathur Rizki | Dibuat dengan HTML & CSS & JavaScript</p>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
